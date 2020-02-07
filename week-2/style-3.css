@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(236, 158, 226);
+    font-size: 8px;
+    font-family: 'Oxygen Mono', monospace;
+}
+
+.container {
+    width: 260px;
+    background-color: white;
+    padding: 25px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 130px;
+    left: calc(50% - 130px);
+}

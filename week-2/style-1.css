@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(247, 227, 155);
+    font-size: 7pt;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.upper-left-box {
+    background-color: white;
+    /* border: 1px solid black; */
+    width: 280px;
+    height: 210px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.upper-right-box {
+    background-color: white;
+    /* border: 1px solid black; */
+    width: 280px;
+    height: 210px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.bottom-box {
+    background-color: white;
+    /* border: 1px solid black; */
+    width: 280px;
+    height: 210px;
+    position: absolute;
+    top: 500px;
+    left: calc(50% - 140px);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}

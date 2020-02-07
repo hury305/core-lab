@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(178, 163, 228);
+    font-size: 8pt;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.left {
+    background-color: white;
+    /* border: 1px solid black; */
+    width: 260px;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.center {
+    background-color: white;
+    /* border: 1px solid black; */
+    width: 260px;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 130px);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.right {
+    background-color: white;
+    /* border: 1px solid black; */
+    width: 260px;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 20px;
+    box-sizing: border-box;
+}
