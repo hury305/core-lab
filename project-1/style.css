@@ -1,0 +1,200 @@
+body {
+    background-color: rgb(237, 217, 255);
+    cursor: pointer;
+    /* width: 100vw; */
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: white; 
+    opacity: 0;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(237, 217, 255);
+    border-radius: 10px;
+    opacity: 1;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(197, 134, 255);
+    opacity: 1;
+  }
+
+  ::selection {
+    color: inherit; 
+    background: rgb(237, 217, 255);
+  }
+
+.container {
+    width: 500px;
+    height: 300px;
+    top: 200px;
+    left: calc(50% - 250px);
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: scroll;
+    box-shadow: 10px 10px rgb(98, 88, 107);
+    overflow-x: hidden;
+}
+
+.name {
+    font-size: 30pt;
+    border-radius: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    color: rgb(197, 134, 255);
+    text-shadow: 5px 5px rgb(98, 88, 107);
+    margin: 25px;
+    cursor: url(coco.png), pointer;
+}
+
+.name:hover {
+    /* transform: scale(1.25); */
+    color: rgb(98, 88, 107);
+    text-shadow: 5px 5px rgb(197, 134, 255);
+    animation-name: hover;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes hover {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.contact {
+    margin: 25px;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(98, 88, 107);
+    line-height: 20pt;
+    font-size: 12pt;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    background-color: rgb(237, 217, 255);
+}
+
+a:hover {
+    background-color: rgb(197, 134, 255);
+}
+
+.bio {
+    margin: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(98, 88, 107);
+    line-height: 20pt;
+    font-size: 12pt;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    line-height: 24pt;
+}
+
+li::before {
+    content: "💜 ";
+    font-size: 9pt;
+    margin-right: 10px;
+}
+
+.milk {
+    position: absolute;
+    right: 10px;
+    top: 330px;
+    margin: 5px;
+    background-color: rgb(98, 88, 107);
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+.milk:hover {
+    background-color: transparent;
+    border-radius: 0%;
+}
+
+.corner {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(197, 134, 255);
+    border-radius: 10px;
+    width: 75px;
+    height: 75px;
+    color: white;
+    font-size: 30pt;
+    text-align: center;
+    padding-top: 18px;
+    box-sizing: border-box;
+}
+
+.corner:hover {
+    background-color: transparent;
+    color: transparent;
+}
+
+.choco {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.choco:hover {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        width: 400px;
+        height: 350px;
+        top: 150px;
+        left: calc(50% - 200px);
+        overflow: hidden;
+    }
+    .name {
+        font-size: 25pt;
+        text-shadow: 4px 4px rgb(98, 88, 107);
+    }
+    .contact {
+        font-size: 10pt;
+    }
+    .bio {
+        font-size: 10pt;
+    }
+    li {
+        line-height: 20pt;
+    }
+    .milk {
+        top: 280px;
+    }
+    li::before {
+        content: "💜 ";
+        font-size: 7pt;
+    }
+}
