@@ -38,7 +38,7 @@ for(i = 0; i< 40; i++){
 
 //changing text
 window.onload=function(){ //execute on page load
-    // document.getElementById("one").innerHTML = " ";
+    document.getElementById("one").innerHTML = " ";
     document.getElementById("lyrics").style.opacity = "0";
     setTimeout(func1, 10000);  //sets a timer for func1
     setTimeout(func2, 13000);
